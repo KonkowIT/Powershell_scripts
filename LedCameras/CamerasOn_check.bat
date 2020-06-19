@@ -1,1 +1,0 @@
-powershell -ExecutionPolicy Bypass -command "& 'C:\LedCameras\CamerasOn_check.ps1' -verb runas -WindowStyle minimized"
