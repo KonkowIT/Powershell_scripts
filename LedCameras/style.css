@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #2B3643;
+  color: white;
+  width: 100% ;
+}
+
+nav {
+  position: absolute; 
+  top: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), #333, #333, #333); 
+  margin: auto; 
+  width: 100%; 
+  padding: 0.5em; 
+  overflow: auto;
+}
+
+.grid-container {
+  text-align: center;
+  font-size: 1.25em;
+  margin: auto;
+  padding:  0.5em 0.5em 0.5em 0.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.grid-container-cell {
+  background-color: #464A52;
+  margin: 1%;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  grid-gap: 0.5em;
+  border-radius: 0.75%;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.grid-container-cell:hover {
+  box-shadow: 0 10px 20px rgba(0, 144, 196, 0.19), 0 6px 6px rgba(0, 144, 196, 0.23);
+}
+
+.grid-item-text {
+  color: white;
+  padding: 10px 0px 10px 0px;
+}
+
+img { 
+  max-width: 99%;
+  max-height: 350px;
+  width: 160em;
+  height: 15em;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.unknown .lightbox img:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.9);
+}
+
+.lightbox img {
+	max-width: 75%;
+	max-height: 75%;
+  width: auto;
+  height: auto;
+  margin: 5%;
+  border-radius: 0.33%;
+}
+
+.lightbox:target {
+	outline: none;
+	display: block;
+}
+
+.ios iframe {
+  width: 100% !important;
+  height: 15em !important;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.android iframe {
+  width: 100% !important;
+  height: 15em !important;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.unknown iframe {
+  width: 100% !important;
+  height: 100% !important;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.android .txt-ios {
+  display: none;
+}
+
+.ios .txt-android {
+  display: none;
+}
+
+.unknown .txt-ios {
+  display: none;
+}
+
+.unknown .txt-android {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+button.btn-style {
+  -webkit-appearance: button;
+  display: inline-block;
+  padding: 0.25em 1.25em;
+  border: 0.16em solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 500;
+  color: #464A52;
+  background-color: #f2f2f2 !important;
+  text-align: center;
+  transition: all 0.15s;
+}
+
+button.btn-style:hover {
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: rgba(0,0,0,0) !important;
+  transform: scale(1.1);
+  transition: 0.25s;
+}
+
+.progress {
+  background: linear-gradient(to right, rgba(0, 144, 196, 0.75) var(--scroll), transparent 0);
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 4px;
+  z-index: 1;
+  top: 0px;
+}
+
+.yt_link {
+  height: 100%;
+}
+
+#kk-logo {
+  height: 10em;
+  width: auto;
+  box-shadow: none;
+}
+
+#kk-logo:hover {
+  height: 10em;
+  width: auto;
+  box-shadow: none;
+}

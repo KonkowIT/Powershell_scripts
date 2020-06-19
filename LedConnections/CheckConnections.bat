@@ -1,0 +1,1 @@
+powershell -executionpolicy bypass -windowstyle minimized -command "& C:\LedConnections\LedConnections.ps1"
